@@ -10,7 +10,7 @@ from member.forms import UserForm, RegistrationForm, LoginForm
 # Create your views here.
 
 def home(request): # the function will take request as input
-    return render(request, 'home.html') # the function then renders an html page template called home.html
+    return render(request, 'member/home.html') # the function then renders an html page template called home.html
 
 
 def register(request):
@@ -52,7 +52,7 @@ def user_login(request):
         else:
                 return HttpResponse('Invalid Login')
     else:
-        return render(request, 'login.html', {})
+        return render(request, 'member/login.html', {})
 
 
 @login_required
