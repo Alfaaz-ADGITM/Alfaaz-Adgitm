@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% block css %} {% endblock %}
     </head>
-    <body id="bg-img">
+    <body>
 
       <!-- START: HEADER-->
       <header>
@@ -55,6 +55,6 @@
 
       {% block body_block %}
       {% endblock %}
-
+      <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
     </body>
     </html>
