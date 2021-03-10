@@ -1,0 +1,21 @@
+
+<!-- 
+Thanks to:
+https://medium.com/@AmJustSam/how-to-do-css-only-frosted-glass-effect-e2666bafab91 
+-->
+
+{% load static %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {% block css %} {% endblock %}
+        <body>
+<div class="blurred-box">
+    <div class="user-login-box">
+      <div class="user-name">LOGIN HERE</div>
+      <input class="user-password" type="text" />
+    </div>
+     <div class="user-login-box">
+      <input class="user-password" type="text" />
+    </div>
+    
+  </div>
+</body>
