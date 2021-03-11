@@ -1,17 +1,40 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.urls import reverse
+from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-
+from Alfaaz import settings
 from member.models import Member
-from member.forms import UserForm, RegistrationForm, LoginForm
+from member.forms import UserForm, RegistrationForm, LoginForm, ContactForm
 
 # Create your views here.
 
 def home(request): # the function will take request as input
     return render(request, 'member/home.html') # the function then renders an html page template called home.html
 
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = "ALFAAZ INQUIRY"
+            body = {
+                'contact_name': form.cleaned_data['contact_name'],
+                'contact_email': form.cleaned_data['contact_email'],
+                #'contact_phone': form.cleaned_data['contact_phone'],
+                'content': form.cleaned_data['content'],
+            }
+            message = "\n".join(body.values())
+            try:
+                send_mail(subject, message, settings.EMAIL_HOST_USER, ['avibilasgupta@gmail.com'], fail_silently=False  )
+            except BadHeaderError:
+                return HttpResponse('Invalid Header Found')
+            return HttpResponseRedirect(reverse('home'))
+    form = ContactForm()
+    return render(request, 'member/contact.html', {'form':form})
+
+def about_view(request):
+    return render(request, 'member/about.html')
 
 def register(request):
     registered = False
