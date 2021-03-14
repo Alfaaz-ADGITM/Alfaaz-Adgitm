@@ -7,7 +7,6 @@ from .models import Member
 class MemberAdmin(admin.ModelAdmin):
     list_display = [
         'enrollment_number',
-        'user',
         'student_name',
         'role',
         'phone_number',

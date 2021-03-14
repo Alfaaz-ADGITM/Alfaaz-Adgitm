@@ -21,7 +21,6 @@ def contact_view(request):
             body = {
                 'contact_name': form.cleaned_data['contact_name'],
                 'contact_email': form.cleaned_data['contact_email'],
-                #'contact_phone': form.cleaned_data['contact_phone'],
                 'content': form.cleaned_data['content'],
             }
             message = "\n".join(body.values())
@@ -93,3 +92,10 @@ def edit(request):
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('home'))
+
+@login_required
+def profile(request):
+    if request.method=='GET':
+        enrollment_number = request.GET.get('enrollment_number')
+        member_info = Member.objects.filter(enrollment_number = enrollment_number)
+        return render(request, 'member/profile.html',{'member_info':member_info})
