@@ -35,6 +35,9 @@ def contact_view(request):
 def about_view(request):
     return render(request, 'member/about.html')
 
+def team_view(request):
+    return render(request, 'member/team.html')
+
 '''def register(request):
     registered = False
     if request.method == 'POST':
