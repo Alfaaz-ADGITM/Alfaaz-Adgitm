@@ -19,9 +19,9 @@ def contact_view(request):
         if form.is_valid():
             subject = "ALFAAZ INQUIRY"
             body = {
-                'contact_name': form.cleaned_data['contact_name'],
-                'contact_email': form.cleaned_data['contact_email'],
-                'content': form.cleaned_data['content'],
+                'name': form.cleaned_data['name'],
+                'email': form.cleaned_data['email'],
+                'desc': form.cleaned_data['desc'],
             }
             message = "\n".join(body.values())
             try:
@@ -35,7 +35,7 @@ def contact_view(request):
 def about_view(request):
     return render(request, 'member/about.html')
 
-def register(request):
+'''def register(request):
     registered = False
     if request.method == 'POST':
         user_form = UserForm(request.POST)
@@ -54,10 +54,10 @@ def register(request):
     else:
         user_form = UserForm()
         registration_form = RegistrationForm()
-    return render(request, 'reg_form.html',
+    return render(request, 'member/register.html',
                             {'user_form': user_form,
                             'registration_form': registration_form,
-                            'registered': registered})
+                            'registered': registered})'''
 
 def user_login(request):
     if request.method == 'POST':

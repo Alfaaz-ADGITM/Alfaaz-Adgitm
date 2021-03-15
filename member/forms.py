@@ -31,6 +31,6 @@ class RegistrationForm(forms.ModelForm):
             'branch',]
 
 class ContactForm(forms.Form):
-    contact_name = forms.CharField(required=True)
-    contact_email = forms.EmailField(required=True)
-    content = forms.CharField(required=True, widget=forms.Textarea)
+    name = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    desc = forms.CharField(required=True, widget=forms.Textarea)
