@@ -11,7 +11,9 @@
   
   /*//////////////////////////////////////////////////////////////////
   [ RESTYLE TAG ]*/
-  
+  @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+  @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css);
+
   * {
       margin: 0px; 
       padding: 0px; 
@@ -128,7 +130,7 @@
   
   .container-contact100 {
     width: 100%;  
-    min-height: 100vh;
+    min-height: 90vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -537,6 +539,48 @@
     color: #333333;
     line-height: 1.2;
   }
+    /* START: Contact Styling*/
+#contact {
+	padding-top: 12rem;
+	padding-bottom: 7.2rem;
+  }
+  #contact .effect .buttons {
+	  margin-top: 30px;
+	  display: flex;
+	  justify-content: center;
+  }
+  #contact .effect a {
+	  text-decoration: none;
+	  width: 60px;
+	  height: 60px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  border-radius: 50%;
+	  margin-right: 20px;
+	  font-size: 25px;
+	  overflow: hidden;
+	  position: relative;
+	  color: #FFFFFF;
+	  border: 2px solid #FFFFFF;
+  }
+  /* amiens effect */
+  #contact .effect.amiens a {
+	  transition: all 0.2s linear 0.2s;
+  }
+  #contact .effect.amiens a i {
+	  transition: all 0.2s linear 0s;
+  }
+  #contact .effect.amiens a:hover {
+	  transition: all 0.2s linear 0s;
+	  border-color: #444;
+  }
+  #contact .effect.amiens a:hover i {
+	  transform: scale(1.7);
+	  text-shadow: 4px 0px 3px #212121;
+	  transition: all 0.2s linear 0.2s;
+  }
+  /* END: Contact Styling*/
   
   
   
