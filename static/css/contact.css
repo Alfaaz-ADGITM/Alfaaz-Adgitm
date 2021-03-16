@@ -49,6 +49,7 @@
   /*---------------------------------------------*/
   h1,h2,h3,h4,h5,h6 {
       margin: 0px;
+      color: #FFFFFF;
   }
   
   p {
@@ -130,7 +131,7 @@
   
   .container-contact100 {
     width: 100%;  
-    min-height: 90vh;
+    min-height: 85vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -541,13 +542,17 @@
   }
     /* START: Contact Styling*/
 #contact {
-	padding-top: 12rem;
-	padding-bottom: 7.2rem;
+	padding-top: 1px;
+	padding-bottom: 7px;
+  padding-left: 420px;
   }
   #contact .effect .buttons {
 	  margin-top: 30px;
 	  display: flex;
 	  justify-content: center;
+  }
+  #contact .h3{
+    color: #FFFFFF;
   }
   #contact .effect a {
 	  text-decoration: none;
@@ -573,7 +578,7 @@
   }
   #contact .effect.amiens a:hover {
 	  transition: all 0.2s linear 0s;
-	  border-color: #444;
+	  border-color: rgb(216, 166, 213);
   }
   #contact .effect.amiens a:hover i {
 	  transform: scale(1.7);

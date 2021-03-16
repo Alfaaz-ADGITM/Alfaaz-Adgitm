@@ -118,6 +118,7 @@ h2 {
 h3 {
   font-family: 'Montserrat';
   font-size: 1.8rem;
+  color: #FFFFFF;
   font-weight: 1000;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -339,6 +340,7 @@ img, video {
   h2,
   h3 {
 	margin: 0;
+	color: #FFFFFF;
 	font-weight: 400;
   }
   h1.lg-heading,
