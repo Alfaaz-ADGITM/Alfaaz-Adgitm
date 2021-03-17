@@ -27,7 +27,7 @@ SECRET_KEY = '&^@thp0iikp(kz-4mu$ln9ay-7g8h7(x_&lgfr-d!)^$$8ws@#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://alfaaz-adgitm.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
