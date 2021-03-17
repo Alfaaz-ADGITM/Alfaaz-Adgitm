@@ -1,1 +1,1 @@
-web: gunicorn Alfaaz.wsgi
+web: gunicorn Alfaaz.wsgi --log-file -
