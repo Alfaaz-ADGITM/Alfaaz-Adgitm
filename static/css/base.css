@@ -88,7 +88,7 @@ body{
 
 input.user-password{
   width: 120px;
-  height: 18px;
+  height: 100%;
   opacity: 0.4;
   border-radius: 2px;
   padding: 5px 15px;

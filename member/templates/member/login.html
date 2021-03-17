@@ -1,18 +1,24 @@
 {% extends 'member/base.html' %}
 {% block body_block %}
 
-
+<!--
 <div class="blurred-box">
+  <form method="post" action="/login/">
+    {% csrf_token %}
   <div class="user-login-box">
     <div class="user-name">LOGIN HERE</div>
-    <input class="user-password" type="text" />
+    <label for="username">Username:</label>
+    <input id="username" type="username" class="user-password" type="text" />
   </div>
    <div class="user-login-box">
-    <input class="user-password" type="text" />
+    <label for="password">Password:</label>
+    <input id="password" type="password" class="user-password" type="text" />
   </div>
+  <div class="user-login-box"><button value="login" class="contact100-form-btn" type="submit"><span> Submit</span></button></div>
   
-</div>
-            <!--<div class="blurred-box">
+</form>
+</div>-->
+            <div class="blurred-box">
               <div class="user-login-box">
                 <div class="user-name">Login Here</div>
                 <form method="post" action="{% url 'login' %}">
@@ -20,12 +26,12 @@
                     {# A more "HTML" way of creating the login form#}
                     <label for="username">Username:</label>
                     <input class="user-password" type="text" name="username" placeholder="Username">
-                    <label for="password">Password:</label>
+                    <label for="password" style="margin-top: 20px;">Password:</label>
                     <input class="user-password" type="password" name="password" placeholder="Password">
-                    <input type="submit" name="" value="Login">
+                    <input style="margin-top: 30px;" class="user-password" type="submit" name="" value="Login">
                     </form>
               </div>
-            </div>-->
+            </div>
               
     
             
