@@ -71,7 +71,7 @@ def user_login(request):
             if user.is_active:
                 login(request, user)
                 #member = Member.objects.get(user__username=username)
-                return HttpResponseRedirect(reverse('profile'))
+                return HttpResponseRedirect(reverse('home'))
             else:
                 return HttpResponse('Disabled account')
         else:
@@ -100,6 +100,5 @@ def logout_view(request):
 def profile(request, username):
     if request.method=='GET':
         #username = request.GET.get('username')
-        import pdb;pdb.set_trace()
         member_info = Member.objects.filter(user__username = username)
         return render(request, 'member/profile.html',{'member_info':member_info})
