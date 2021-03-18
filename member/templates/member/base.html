@@ -29,8 +29,10 @@
           <ul class="menu-nav">
             <li class="nav-item">
                 <a href="{% url 'home' %}" class="nav-link">Home</a></li>
-            <li class="nav-item">
-                <a href="{% url 'about' %}" class="nav-link">About</a></li>
+
+            <!--<li class="nav-item">
+                <a href="" class="nav-link">About</a></li>-->
+
             <li class="nav-item">
                 <a href="{% url 'team' %}" class="nav-link">Team</a></li>
                 
@@ -40,7 +42,8 @@
             <li class="nav-item">
                 <a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
             {% else %}
-
+            <li class="nav-item">
+              <a href="{% url 'guest_profile' %}" class="nav-link">Profile</a></li>
             <li class="nav-item">
                 <a href="{% url 'login' %}" class="nav-link">Login</a></li>
             {% endif %}

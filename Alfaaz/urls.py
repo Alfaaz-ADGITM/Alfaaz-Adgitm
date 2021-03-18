@@ -24,8 +24,10 @@ urlpatterns = [
     path('login/', views.user_login, name='login'),
     path('logout/', views.logout_view, name='logout'),
     path('contact', views.contact_view, name='contact'),
-    path('about', views.about_view, name='about'),
+    #path('about', views.about_view, name='about'),
     path('team', views.team_view, name='team'),
+    #path('team/<str:username>', views.team_member_view, name='team_member'),
     path('', views.home, name='home'),
-    path('profile/<str:username>', views.profile, name='profile'),
+    path('profile/', views.profile, name='guest_profile'),
+    path('profile/<username>/', views.profile, name='profile'),
 ]

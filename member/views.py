@@ -32,11 +32,17 @@ def contact_view(request):
     form = ContactForm()
     return render(request, 'member/contact.html', {'form':form})
 
-def about_view(request):
-    return render(request, 'member/about.html')
+'''def about_view(request):
+    return render(request, 'member/about.html')'''
 
 def team_view(request):
     return render(request, 'member/team.html')
+
+'''def team_member_view(request):
+    username = request.POST.get('username')
+    user = Member.objects.get(user__username=username)
+    import pdb;pdb.set_trace()
+    return render(request, 'member/team.html')'''
 
 '''def register(request):
     registered = False
@@ -96,8 +102,8 @@ def logout_view(request):
     logout(request)
     return HttpResponseRedirect(reverse('home'))
 
-@login_required
-def profile(request, username):
+
+def profile(request, username='Guest'):
     if request.method=='GET':
         #username = request.GET.get('username')
         member_info = Member.objects.filter(user__username = username)
