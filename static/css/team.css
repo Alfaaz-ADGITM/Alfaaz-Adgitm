@@ -9,7 +9,7 @@
   }
   .biogrid li {
     list-style-type: none;
-    right:180px;
+    right:-60px;
   }
   .biodescription .fa {
     font-size: 40px;
