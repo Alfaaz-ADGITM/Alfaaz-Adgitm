@@ -1,4 +1,71 @@
 {% extends 'member/base.html' %}
 {% block body_block %}
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="{% static 'css/team.css' %}">
+{% block css %} {% endblock %}
+<div class="bg bg--type2" data-background="{% static 'images/team.jpg' %}" data-height="35%" style="background-image: url('/static/images/team.jpg'); min-height: 301.35px; -webkit-user-select: auto;">
+   <div class="inner" style="-webkit-user-select: auto;">
+      <div class="container" style="-webkit-user-select: auto;">
+         <div class="row" style="-webkit-user-select: auto;">
+            <div class="col-md-10" style="-webkit-user-select: auto;">
+               <section class="ct-page_title" style="-webkit-user-select: auto;">
+                  <div class="h1" style="-webkit-user-select: auto;">
+                     About
+                  </div>
+                  <div class="ct-page_title-content" style="-webkit-user-select: auto;"></div>
+               </section>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="container">
+   <div id="theBioGrid">
+      <ul class="row biogrid" id="biogrid">
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="satyam" class="img-responsive" src="{% static 'images/team-15.jpg' %}"></a>
+               <div class="description-box animateBottomName">Satyam Tyagi<br>President</div>
+            </div>
+         </li>
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="yashika" class="img-responsive" src="{% static 'images/Yashika.jpeg' %}"></a>
+               <div class="description-box animateBottomName">Yashika Goyal<br>Content Head</div>
+            </div>
+         </li>
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="avi" class="img-responsive" src="{% static 'images/avi.jpg' %}"></a>
+               <div class="description-box animateBottomName">Avi Gupta<br>Website Designer</div>
+            </div>
+         </li>
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="kartik" class="img-responsive" src="{% static 'images/kartik.jpeg' %}"></a>
+               <div class="description-box animateBottomName">Kartik Joshi<br>Graphics Head</div>
+            </div>
+         </li>
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="arambh" class="img-responsive" src="{% static 'images/arambh.jpeg' %}"></a>
+               <div class="description-box animateBottomName">ARAMBH (Piyush Kant)<br>Comic and Rap Head</div>
+            </div>
+         </li>
+         <li class="col-xs-3">
+            <div class="imgHolder">
+               <a href="#"><img alt="Ujjwal" class="img-responsive" src="{% static 'images/Ujjwal.jpeg' %}"></a>
+               <div class="description-box animateBottomName">Ujjwal Makin<br>English Content Head</div>
+            </div>
+         </li>
+      </ul>
+   </div>
+</div>
+
+
+
 
 {% endblock %}

@@ -35,8 +35,8 @@ def contact_view(request):
 '''def about_view(request):
     return render(request, 'member/about.html')'''
 
-def team_view(request):
-    return render(request, 'member/team.html')
+def about_view(request):
+    return render(request, 'member/about.html')
 
 '''def team_member_view(request):
     username = request.POST.get('username')

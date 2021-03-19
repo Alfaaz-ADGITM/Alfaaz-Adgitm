@@ -9,6 +9,7 @@
   }
   .biogrid li {
     list-style-type: none;
+    right:180px;
   }
   .biodescription .fa {
     font-size: 40px;
@@ -40,7 +41,7 @@
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    width: 100%;
+    width: 70%;
   }
   .dim {
     opacity: 0.5;
@@ -142,13 +143,15 @@
   }
   .biogrid li {
     cursor: pointer;
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: -25px;
+    margin-right:-70px;
     padding: 0;
-    position:;
+    position:relative;
   }
   .biogrid img {
-    height: 250px;
-    width: 100%;
+    height: 180px;
+    width: 183px;
   }
   .biogrid img.close-backex {
     float: right;
