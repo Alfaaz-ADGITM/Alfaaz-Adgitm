@@ -319,7 +319,17 @@
   .img-responsive{
     margin-top: 1%;
   }
-  .ct-page_title {
+  .modal_img{
+    float: left;
+    padding-top:80px;
+    width: auto;
+    height: auto;
+  }
+  .modal_content{
+    padding-right: -10px;
+    padding-left: 210px;
+  }
+    .ct-page_title {
       color: #fff;
   }
   .ct-page_title-content {
