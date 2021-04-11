@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 body {
+	overflow-x: hidden;
 	background: linear-gradient(-45deg, #000000, #87368a, #d11c2b, #f8e80b);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;

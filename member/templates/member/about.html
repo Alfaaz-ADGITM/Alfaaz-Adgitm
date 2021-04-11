@@ -2,11 +2,14 @@
 {% block body_block %}
 {% load static %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="{% static 'css/team.css' %}">
 {% block css %} {% endblock %}
-<div class="bg--type2"><img style="align-content: flex-start; height: 10%; width: 10%;" alt="satyam" class="img-responsive" src="{% static 'images/team.png' %}"></div>
+<div class="bg--type2"><img style="align-content: flex-start; height: 8%; width: 8%;overflow: hidden;" alt="satyam" class="img-responsive" src="{% static 'images/team.png' %}"></div>
                   <div style="text-align: center; font-size: 500%; color: #fff; margin-top: -40px;">About</div>
                   <div style="text-align: center; font-size: 150%; color: #fff; margin-top: 20px; margin-left: 20%; margin-right: 20%;">Words offer the means to meaning, the very medium that facilitates the flow of thoughts stands underrated for the masses but here at Alfaaz ADGITM we believe in enunciating the truth with panache. Alfaaz aims to be a haven to all the literary artists who set foot in the hallowed halls of ADGITM. We offer you a canvas free from the shackles  of reality, one you can paint with the colours of your own imagination. Here at Alfaaz we encourage you to fulfil your creative potential in the form of poems and prose, without the restrictions of language. We invite all Hindi kavis, urdu shayars and english writers to come aboard and grace the stage with their crafts. We also serve to be the funny bone of college by incorporating stand up comics and humorous poets. Explore an avenue bejewelled by creativity and content by joining this collective of literary free birds.</div>
                   <div style="text-align: center; font-size: 400%; color: #fff; margin-top: 40px;">Meet the Team</div>
@@ -16,37 +19,134 @@
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="satyam" class="img-responsive" src="{% static 'images/team-15.jpg' %}">
-               <div class="description-box animateBottomName">Satyam Tyagi<br>President<a href="#" class="button " style="color: white; float: right;">Details</a></div>
-            </div>
+               <div class="description-box animateBottomName">Satyam Tyagi<br>President<a href="#" class="button " style="color: white; float: right;" data-toggle="modal" data-target="#myModal_1">Details</a></div>
+                     <div class="modal fade" id="myModal_1" role="dialog" style="padding-top: 20%;">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <img alt="satyam" class="img-responsive" src="{% static 'images/team-15.jpg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Satyam</h2>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+               </div>
+            
          </li>
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="yashika" class="img-responsive" src="{% static 'images/Yashika.jpeg' %}">
-               <div class="description-box animateBottomName">Yashika Goyal<br>Content Head<a href="#" class="button " style="color: white; float: right;">Details</a></div>
+               <div class="description-box animateBottomName">Yashika Goyal<br>Content Head<a href="#" class="button " style="color: white; float: right;" data-toggle="modal" data-target="#myModal_2">Details</a></div>
+               <div class="modal fade" id="myModal_2" role="dialog" style="padding-top: 20%;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img alt="yashika" class="img-responsive" src="{% static 'images/Yashika.jpeg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Yashika</h2>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
          </li>
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="avi" class="img-responsive" src="{% static 'images/avi.jpg' %}">
-               <div class="description-box animateBottomName">Avi Gupta<br>Website Designer<a href="#" class="button " style="color: white; float: right;">Details</a></div>
+               <div class="description-box animateBottomName">Avi Gupta<br>Website Designer<a href="#" class="button " style="color: white; float: right;"data-toggle="modal" data-target="#myModal_3">Details</a></div>
+               <div class="modal fade" id="myModal_3" role="dialog" style="padding-top: 20%;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img alt="avi" class="img-responsive" src="{% static 'images/avi.jpg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Avi</h2>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
          </li>
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="kartik" class="img-responsive" src="{% static 'images/kartik.jpeg' %}">
-               <div class="description-box animateBottomName">Kartik Joshi<br>Graphics Head<a href="#" class="button " style="color: white; float: right;">Details</a></div>
+               <div class="description-box animateBottomName">Kartik Joshi<br>Graphics Head<a href="#" class="button " style="color: white; float: right;"data-toggle="modal" data-target="#myModal_4">Details</a></div>
+               <div class="modal fade" id="myModal_4" role="dialog" style="padding-top: 20%;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img alt="kartik" class="img-responsive" src="{% static 'images/kartik.jpeg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Kartik</h2>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
          </li>
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="arambh" class="img-responsive" src="{% static 'images/arambh.jpeg' %}">
-               <div class="description-box animateBottomName">ARAMBH (Piyush Kant)<br>Comic/Rap Head<a href="#" class="button " style="color: white; float: right;">Details</a></div>
+               <div class="description-box animateBottomName">ARAMBH (Piyush Kant)<br>Comic/Rap Head<a href="#" class="button " style="color: white; float: right;"data-toggle="modal" data-target="#myModal_5">Details</a></div>
+               <div class="modal fade" id="myModal_5" role="dialog" style="padding-top: 20%;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img alt="arambh" class="img-responsive" src="{% static 'images/arambh.jpeg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Arambh</h2>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
          </li>
          <li class="col-xs-3">
             <div class="imgHolder">
                <img alt="Ujjwal" class="img-responsive" src="{% static 'images/Ujjwal.jpeg' %}">
-               <div class="description-box animateBottomName">Ujjwal Makin<br>English Head<a href="#" class="button " style="color: white; float: right;">Details</a></div>
+               <div class="description-box animateBottomName">Ujjwal Makin<br>English Head<a href="#" class="button " style="color: white; float: right;"data-toggle="modal" data-target="#myModal_6">Details</a></div>
+               <div class="modal fade" id="myModal_6" role="dialog" style="padding-top: 20%;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <img alt="Ujjwal" class="img-responsive" src="{% static 'images/Ujjwal.jpeg' %}" style="float: left;width: 100px;height: 100px;">
+                             <h2 style="float: right;">Ujjwal</h2>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
          </li>
       </ul>
