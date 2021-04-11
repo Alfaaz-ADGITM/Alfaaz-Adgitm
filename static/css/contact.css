@@ -541,16 +541,17 @@
     line-height: 1.2;
   }
     /* START: Contact Styling*/
-#contact {
-	padding-top: 1px;
-	padding-bottom: 7px;
-  padding-left: 420px;
-  }
-  #contact .effect .buttons {
-	  margin-top: 30px;
-	  display: flex;
-	  justify-content: center;
-  }
+    #contact {
+      padding-top: -10px;
+      padding-bottom: 2px;
+      padding-left: 420px;
+      margin-top:-45px;
+      }
+      #contact .effect .buttons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+      }
   #contact .h3{
     color: #FFFFFF;
   }
